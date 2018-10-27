@@ -1,0 +1,23 @@
+{
+  "environment": "web",
+  "source": "14lodTy8h5dxUyv4RCe5vYRsmqDY9qN8sgy8YP1gTywY",
+  "format": "html",
+  "prefix": "../../",
+  "mainga": "UA-49880327-14",
+  "updated": "2018-10-27T16:53:31Z",
+  "id": "motionlayoutintro",
+  "duration": 0,
+  "title": "Dev101 App - using MotionLayout",
+  "author": "Balakrishna Sangem",
+  "summary": "In this codelab, You will learn how to use MotionLayout",
+  "theme": "android",
+  "status": null,
+  "category": [
+    "Android"
+  ],
+  "tags": [
+    "android studio 3.2",
+    "kotlin"
+  ],
+  "url": "motionlayoutintro"
+}
