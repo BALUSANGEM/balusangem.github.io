@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="prettify-small">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/bower_components/google-prettify/distrib/prettify-small.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
