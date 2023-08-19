@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 import {
   FluentProvider,
@@ -8,30 +8,31 @@ import {
   Link,
   Label,
 } from "@fluentui/react-components";
-import { Stack, IStackStyles, IStackTokens } from '@fluentui/react/lib/Stack';
+// eslint-disable-next-line  no-unused-vars
+import { Stack, IStackTokens, IStackStyles } from "@fluentui/react/lib/Stack";
+
+const stackStyles: IStackStyles = {
+  root: {
+    padding: 16
+  },
+};
+
+const socialStackStyles: IStackStyles = {
+  root: {
+    margin: 8,
+  }
+}
+
+const horizontalGapStackTokens: IStackTokens = {
+  childrenGap: 10,
+  padding: 10,
+};
 
 export default function App() {
 
-  const stackStyles: IStackStyles = {
-    root: {
-      padding: 16
-    },
-  };
-
-  const socialStackStyles: IStackStyles = {
-    root: {
-      margin: 8,
-    }
-  }
-
-  const horizontalGapStackTokens: IStackTokens = {
-    childrenGap: 10,
-    padding: 10,
-  };
-
   return (
-      <FluentProvider theme={webLightTheme}>
-        <Divider></Divider>
+    <FluentProvider theme={webLightTheme}>
+      <Divider></Divider>
       <Stack enableScopedSelectors styles={stackStyles} >
         <Stack.Item align="center">
           <Stack horizontalAlign='center' verticalAlign='center'>
@@ -55,7 +56,6 @@ export default function App() {
           </Link>
         </Stack>
       </Stack>        
-          
-      </FluentProvider>
+    </FluentProvider>
   );
 }
