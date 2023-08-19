@@ -7,9 +7,10 @@ import {
   Title2,
   Link,
   Label,
+  Badge,
 } from "@fluentui/react-components";
 // eslint-disable-next-line  no-unused-vars
-import { Stack, IStackTokens, IStackStyles } from "@fluentui/react/lib/Stack";
+import { Stack, IStackTokens, IStackStyles, IStackItemStyles } from "@fluentui/react/lib/Stack";
 
 const stackStyles: IStackStyles = {
   root: {
@@ -28,12 +29,22 @@ const horizontalGapStackTokens: IStackTokens = {
   padding: 10,
 };
 
+const workInProgresStyle: IStackItemStyles = {
+  root: {
+    paddingTop: 8,
+    paddingBottom: 8
+  }
+}
+
 export default function App() {
 
   return (
     <FluentProvider theme={webLightTheme}>
       <Divider></Divider>
       <Stack enableScopedSelectors styles={stackStyles} >
+        <Stack.Item align="center" styles={workInProgresStyle}>
+          <Badge appearance="outline" color="danger">Portfolio is work in progress</Badge>
+        </Stack.Item>
         <Stack.Item align="center">
           <Stack horizontalAlign='center' verticalAlign='center'>
             <Title2>
