@@ -10,7 +10,9 @@ import {
   Badge,
 } from "@fluentui/react-components";
 // eslint-disable-next-line  no-unused-vars
-import { Stack, IStackTokens, IStackStyles, IStackItemStyles } from "@fluentui/react/lib/Stack";
+import { Stack, IStackTokens, IStackStyles, IStackItemStyles, StackItem } from "@fluentui/react/lib/Stack";
+import Company from "./Company";
+import Projects from "./Projects";
 
 const stackStyles: IStackStyles = {
   root: {
@@ -35,6 +37,20 @@ const workInProgresStyle: IStackItemStyles = {
     paddingBottom: 8
   }
 }
+
+const leftPaneStackStyles: IStackStyles = {
+  root: {
+    padding: 16,
+    alignItems: "flex-start"
+  },
+};
+
+const rightPaneStackStyles: IStackStyles = {
+  root: {
+    padding: 16,
+    width: "100%",
+  },
+};
 
 export default function App() {
 
@@ -65,6 +81,14 @@ export default function App() {
           <Link href="https://github.com/BALUSANGEM" inline>
             Github
           </Link>
+        </Stack>
+        <Stack horizontal>
+          <Stack styles={leftPaneStackStyles}>
+            <StackItem><Company /></StackItem>
+          </Stack>
+          <Stack styles={rightPaneStackStyles}>
+            <Projects />
+          </Stack>
         </Stack>
       </Stack>        
     </FluentProvider>
