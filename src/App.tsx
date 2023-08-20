@@ -5,14 +5,14 @@ import {
   webLightTheme,
   Divider,
   Title2,
-  Link,
   Label,
   Badge,
 } from "@fluentui/react-components";
 // eslint-disable-next-line  no-unused-vars
 import { Stack, IStackTokens, IStackStyles, IStackItemStyles, StackItem } from "@fluentui/react/lib/Stack";
-import Company from "./Company";
+import WorkExperience from "./WorkExperience";
 import Projects from "./Projects";
+import HighlightLink from "./HighlightLink";
 
 const stackStyles: IStackStyles = {
   root: {
@@ -41,7 +41,7 @@ const workInProgresStyle: IStackItemStyles = {
 const leftPaneStackStyles: IStackStyles = {
   root: {
     padding: 16,
-    alignItems: "flex-start"
+    minWidth: 450
   },
 };
 
@@ -54,6 +54,7 @@ const rightPaneStackStyles: IStackStyles = {
 
 export default function App() {
 
+
   return (
     <FluentProvider theme={webLightTheme}>
       <Divider></Divider>
@@ -62,29 +63,24 @@ export default function App() {
           <Badge appearance="outline" color="danger">Portfolio is work in progress</Badge>
         </Stack.Item>
         <Stack.Item align="center">
-          <Stack horizontalAlign='center' verticalAlign='center'>
+          <Stack verticalAlign='center'>
             <Title2>
               Balakrishna Sangem
             </Title2>
             <Label>
-              Sofware Engineer at <Link href="https://everest.engineering/" inline>Everest.Engineering</Link> 
+              Sofware Engineer at{" "}
+              <HighlightLink link="https://everest.engineering" text="Everest.Engineering"/>
             </Label>
           </Stack>
         </Stack.Item>
         <Stack styles={socialStackStyles} tokens={horizontalGapStackTokens} horizontalAlign='center' verticalAlign='center' horizontal>     
-          <Link href="https://www.linkedin.com/in/sbkcse/" inline>
-            LinkedIn
-          </Link>    
-          <Link href="https://twitter.com/sbkurs" inline>
-            Twitter
-          </Link>
-          <Link href="https://github.com/BALUSANGEM" inline>
-            Github
-          </Link>
+          <HighlightLink link="https://www.linkedin.com/in/sbkcse/" text="LinkedIn"/>   
+          <HighlightLink link="https://twitter.com/sbkurs" text="Twitter"/>
+          <HighlightLink link="https://github.com/BALUSANGEM" text="Github"/>
         </Stack>
         <Stack horizontal>
           <Stack styles={leftPaneStackStyles}>
-            <StackItem><Company /></StackItem>
+            <StackItem><WorkExperience /></StackItem>
           </Stack>
           <Stack styles={rightPaneStackStyles}>
             <Projects />

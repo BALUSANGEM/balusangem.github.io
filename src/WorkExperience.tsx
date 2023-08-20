@@ -1,8 +1,9 @@
 import { Stack } from "@fluentui/react";
-import { Card, Label } from "@fluentui/react-components";
+import { Card, Divider, Label, Title3 } from "@fluentui/react-components";
 import React from "react";
+import HighlightLink from "./HighlightLink";
 
-export default function Company() {
+export default function WorkExperience() {
   const workDetails = [
     {
       company: "Everest.Engineering",
@@ -29,11 +30,13 @@ export default function Company() {
   return (
     <>
       <Card appearance="outline">
+        <Title3>Work Experience</Title3>
+        <Divider />
         {workDetails.map((workDetails) => 
-          <Stack key={workDetails.company}>   
-            <Label size="large">{workDetails.company}</Label>
-            <Label>{workDetails.role}</Label>
-            <Label>From {workDetails.from} to {workDetails.to==0 ? "Present" : workDetails.to}</Label>
+          <Stack key={workDetails.company}>
+            <HighlightLink text={workDetails.company} link={workDetails.link}/>
+            <Label size="small">{workDetails.role}</Label>
+            <Label size="small">From {workDetails.from} to {workDetails.to==0 ? "Present" : workDetails.to}</Label>
           </Stack>
         )}
       </Card>
