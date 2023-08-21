@@ -40,15 +40,13 @@ const workInProgresStyle: IStackItemStyles = {
 
 const leftPaneStackStyles: IStackStyles = {
   root: {
-    padding: 16,
-    minWidth: 450
+    padding: 16
   },
 };
 
 const rightPaneStackStyles: IStackStyles = {
   root: {
     padding: 16,
-    width: "100%",
   },
 };
 
@@ -78,13 +76,18 @@ export default function App() {
           <HighlightLink link="https://twitter.com/sbkurs" text="Twitter"/>
           <HighlightLink link="https://github.com/BALUSANGEM" text="Github"/>
         </Stack>
-        <Stack horizontal>
+        <Stack>
           <Stack styles={leftPaneStackStyles}>
             <StackItem><WorkExperience /></StackItem>
           </Stack>
           <Stack styles={rightPaneStackStyles}>
             <Projects />
           </Stack>
+        </Stack>
+        <Stack>
+          <Stack.Item align="center" styles={workInProgresStyle}>
+            <Label color="informative">Built by SBK©2023 using <HighlightLink link="https://react.dev/" text="ReactJS" /> and hosted on <HighlightLink link="https://github.com/BALUSANGEM/balusangem.github.io" text="Github" />, Design system is <HighlightLink link="https://react.fluentui.dev/" text="FluentUI"/> </Label>
+          </Stack.Item>
         </Stack>
       </Stack>        
     </FluentProvider>
