@@ -31,13 +31,6 @@ const horizontalGapStackTokens: IStackTokens = {
   padding: 10,
 };
 
-const workInProgresStyle: IStackItemStyles = {
-  root: {
-    paddingTop: 8,
-    paddingBottom: 8
-  }
-}
-
 const leftPaneStackStyles: IStackStyles = {
   root: {
     padding: 16
@@ -88,9 +81,10 @@ export default function App() {
         </Stack>
         <Label style={{paddingLeft: 20}}> Blogs and Open source contribution will be added in the coming days...</Label>
         <Stack>
-          <Stack.Item align="center" styles={workInProgresStyle}>
-            <Label color="informative">Built by SBK©2023 using <HighlightLink link="https://react.dev/" text="ReactJS" /> and hosted on <HighlightLink link="https://github.com/BALUSANGEM/balusangem.github.io" text="Github" />, Design system is <HighlightLink link="https://react.fluentui.dev/" text="FluentUI"/> </Label>
-          </Stack.Item>
+          <Stack horizontalAlign="center" style={{marginTop: 16, marginBottom: 8}}>
+            <Label disabled color="informative">Built by SBK©2023</Label>
+            <Label disabled >Hosted on <HighlightLink link="https://github.com/BALUSANGEM/balusangem.github.io" text="Github" />, Design system is <HighlightLink link="https://react.fluentui.dev/" text="FluentUI"/> <HighlightLink link="https://react.dev/" text="ReactJS" /> </Label>
+          </Stack>
         </Stack>
       </Stack>        
     </FluentProvider>
