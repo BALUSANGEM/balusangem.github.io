@@ -33,7 +33,7 @@ export default function WorkExperience() {
   return (
     <>
       <Card appearance="outline">
-        <Title3>Work Experience - 8 Years</Title3>
+        <Title3>Work Experience</Title3>
         <Divider />
         {workDetails.map((workDetails) => 
           <Card key={workDetails.company} appearance="outline">

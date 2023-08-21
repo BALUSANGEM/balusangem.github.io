@@ -7,6 +7,7 @@ import {
   Title2,
   Label,
   Badge,
+  Card,
 } from "@fluentui/react-components";
 // eslint-disable-next-line  no-unused-vars
 import { Stack, IStackTokens, IStackStyles, IStackItemStyles, StackItem } from "@fluentui/react/lib/Stack";
@@ -57,7 +58,7 @@ export default function App() {
     <FluentProvider theme={webLightTheme}>
       <Divider></Divider>
       <Stack enableScopedSelectors styles={stackStyles} >
-        <Stack.Item align="center" styles={workInProgresStyle}>
+        <Stack.Item align="center" >
           <Badge appearance="outline" color="danger">Portfolio is work in progress</Badge>
         </Stack.Item>
         <Stack.Item align="center">
@@ -77,6 +78,11 @@ export default function App() {
           <HighlightLink link="https://github.com/BALUSANGEM" text="Github"/>
         </Stack>
         <Stack>
+          <StackItem styles={leftPaneStackStyles}>
+            <Card appearance="outline">
+              <Label size="medium">I am an <span style={{ fontWeight:"bold"}}>Android developer with 8 years of experience </span> and 1 year of ReactJS experience. I have worked in cross-functional teams using agile principles, and I am knowledgeable in Java, Kotlin, Android, Android Studio, Git, and Firebase. I also specialize in project management, communication, and code reviews, ensuring high-quality product delivery. I am eager to learn and stay up-to-date with the latest Android trends.</Label>
+            </Card>
+          </StackItem>
           <Stack styles={leftPaneStackStyles}>
             <StackItem><WorkExperience /></StackItem>
           </Stack>
