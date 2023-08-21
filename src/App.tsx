@@ -6,7 +6,6 @@ import {
   Divider,
   Title2,
   Label,
-  Badge,
   Card,
 } from "@fluentui/react-components";
 // eslint-disable-next-line  no-unused-vars
@@ -58,9 +57,6 @@ export default function App() {
     <FluentProvider theme={webLightTheme}>
       <Divider></Divider>
       <Stack enableScopedSelectors styles={stackStyles} >
-        <Stack.Item align="center" >
-          <Badge appearance="outline" color="danger">Portfolio is work in progress</Badge>
-        </Stack.Item>
         <Stack.Item align="center">
           <Stack verticalAlign='center'>
             <Title2>
@@ -90,6 +86,7 @@ export default function App() {
             <Projects />
           </Stack>
         </Stack>
+        <Label style={{paddingLeft: 20}}> Blogs and Open source contribution will be added in the coming days...</Label>
         <Stack>
           <Stack.Item align="center" styles={workInProgresStyle}>
             <Label color="informative">Built by SBK©2023 using <HighlightLink link="https://react.dev/" text="ReactJS" /> and hosted on <HighlightLink link="https://github.com/BALUSANGEM/balusangem.github.io" text="Github" />, Design system is <HighlightLink link="https://react.fluentui.dev/" text="FluentUI"/> </Label>
