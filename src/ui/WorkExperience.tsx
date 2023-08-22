@@ -1,7 +1,7 @@
 import { Stack, StackItem } from "@fluentui/react";
 import { Card, Divider, Label, Title3 } from "@fluentui/react-components";
 import React from "react";
-import HighlightLink from "./HighlightLink";
+import HighlightLink from "../components/HighlightLink";
 
 export default function WorkExperience() {
   const workDetails = [
