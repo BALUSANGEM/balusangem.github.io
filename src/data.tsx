@@ -23,6 +23,22 @@ export type Project = {
     to: string;
 }
 
+// eslint-disable-next-line
+export type WorkAtCompanyDetails = {
+    // eslint-disable-next-line
+    company: string;
+    // eslint-disable-next-line
+    role: string;
+    // eslint-disable-next-line
+    link: string;
+    // eslint-disable-next-line
+    learnings: string;
+    // eslint-disable-next-line
+    from: string;
+    // eslint-disable-next-line
+    to: string | number;
+}
+
 export const projectsList: Project[] = [
   {
     name: "JTMS Driver App",
@@ -109,3 +125,30 @@ export const projectsList: Project[] = [
     to: ""
   }
 ];
+
+export const workDetails: WorkAtCompanyDetails[] = [
+  {
+    company: "Everest.Engineering",
+    from: "Mar 2019",
+    to: 0,
+    role: "Senior Software Engineer",
+    link: "https://everest.engineering/",
+    learnings: "Joined as Software Engineer and is currently in the role of Senior Software Engineer. I worked with multiple clients and domains since I joined EverestEngineering. Responsibilities includes Developing features as per the client’s requirements, Lead feature development team and coordinate with other teams and Contribute to backend development as needed."
+  },
+  {
+    company: "Avantari",
+    from: "Mar 2017",
+    to: "Mar 2019",
+    role: "Software Engineer",
+    link: "https://www.avantari.org/",
+    learnings: "I worked on Bluetooth Low Energy based applications, Developed Internal company SDKs which are based on BLE. I worked on ARCore to develop some augmented reality apps, I did make sure the project is updated with the latest trends in Android development in terms of APIs and standards. \"I did make sure to use Kotlin as the primary language in Android development in every project\" is one of my accomplishments. I also developed some internal testing apps by closely working with the hardware team."
+  },
+  {
+    company: "Innovare IT Solutions PvtLtd (Currently PlugXR)",
+    from: "Sep 2015",
+    to: "Jan 2017",
+    role: "Software Engineer",
+    link: "https://www.plugxr.com/",
+    learnings: "I worked with a team to create complex UIs. I worked closely with the unity team to develop AR applications."
+  }
+]
