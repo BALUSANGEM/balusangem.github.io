@@ -11,8 +11,7 @@ export default function Projects() {
         <Divider />
         {
           projectsList.map((project) => 
-            // <ProjectDetails key={project.name} project={project} />
-            ProjectDetails(project)
+            <ProjectDetails key={project.name} project={project} />
           )
         }
         <Label size="small">Still many projects are there from Avantari and Innovare, I will add in the coming days...</Label>

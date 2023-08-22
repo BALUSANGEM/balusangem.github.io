@@ -6,7 +6,7 @@ import { Stack } from "@fluentui/react";
 import HighlightLink from "../components/HighlightLink";
 
 export function ProjectDetails(
-  project: Project) {
+  {project}: {project: Project}) {
 
   const badgeItemStyle = {
     root: {
