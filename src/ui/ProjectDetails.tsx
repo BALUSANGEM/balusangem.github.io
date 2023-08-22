@@ -24,22 +24,24 @@ export function ProjectDetails(
     }
   };
 
-  return <Card appearance="outline">
-    <Stack>
-      <Stack.Item><Label size="large">{project.name} </Label></Stack.Item>
-      <Stack.Item styles={descriptionItemStyle}>
-        <Label size="small">{project.description} and </Label><HighlightLink link={project.companyLink} text="know more" />
-      </Stack.Item>
-      <Stack.Item styles={descriptionItemStyle}>
-        <Label size="small">{project.contribution}</Label>
-      </Stack.Item>
-      <Stack horizontal styles={badgeStackStyle}>
-        {project.techstack.map((stack) => (
-          <Stack.Item key={stack} styles={badgeItemStyle}>
-            <Badge appearance="tint" size="small" color="informative">{stack}</Badge>
-          </Stack.Item>
-        ))}
+  return (
+    <Card appearance="outline">
+      <Stack>
+        <Stack.Item><Label size="large">{project.name} </Label></Stack.Item>
+        <Stack.Item styles={descriptionItemStyle}>
+          <Label size="small">{project.description} and </Label><HighlightLink link={project.companyLink} text="know more" />
+        </Stack.Item>
+        <Stack.Item styles={descriptionItemStyle}>
+          <Label size="small">{project.contribution}</Label>
+        </Stack.Item>
+        <Stack horizontal styles={badgeStackStyle}>
+          {project.techstack.map((stack) => (
+            <Stack.Item key={stack} styles={badgeItemStyle}>
+              <Badge appearance="tint" size="small" color="informative">{stack}</Badge>
+            </Stack.Item>
+          ))}
+        </Stack>
       </Stack>
-    </Stack>
-  </Card>;
+    </Card>
+  )
 }
