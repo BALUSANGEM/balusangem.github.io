@@ -4,7 +4,7 @@ import { workDetails } from "../data";
 import { CompanyDetails } from "./CompanyDetails";
 import { AnimatedVisibleContent } from "../components/AnimatedVisibleContent";
 // eslint-disable-next-line  no-unused-vars
-import { IStackStyles, Stack, StackItem } from "@fluentui/react";
+import { IStackItemStyles, IStackStyles, Stack, StackItem } from "@fluentui/react";
 
 export default function WorkExperience() {
   const [showCompanies, setShowCompanies] = useState(false)
@@ -13,6 +13,12 @@ export default function WorkExperience() {
     root: {
       paddingLeft: 16,
       paddingTop: 6,
+    },
+  };
+
+  const companyDetailsItemStyles: IStackItemStyles = {
+    root: {
+      marginTop: 16,
     },
   };
 
@@ -30,7 +36,9 @@ export default function WorkExperience() {
             <>
               <Divider />
               {workDetails.map((workDetails) => 
-                <CompanyDetails key={workDetails.company} workDetails={workDetails} />
+                <StackItem key={workDetails.company} styles={companyDetailsItemStyles}>
+                  <CompanyDetails workDetails={workDetails} />
+                </StackItem>
               )}
             </>
           </AnimatedVisibleContent>

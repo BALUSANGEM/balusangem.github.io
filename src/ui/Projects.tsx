@@ -3,7 +3,8 @@ import React, { useState } from "react";
 import { projectsList } from "../data";
 import { ProjectDetails } from "./ProjectDetails";
 // eslint-disable-next-line  no-unused-vars
-import { IStackStyles, Stack, StackItem } from "@fluentui/react";
+import { IStackItemStyles, IStackStyles, Stack, StackItem } from "@fluentui/react";
+// eslint-disable-next-line  no-unused-vars
 import { AnimatedVisibleContent } from "../components/AnimatedVisibleContent";
 
 export default function Projects() {
@@ -13,6 +14,12 @@ export default function Projects() {
     root: {
       paddingLeft: 16,
       paddingTop: 6,
+    },
+  };
+
+  const projectItemStyles: IStackItemStyles = {
+    root: {
+      marginTop: 16,
     },
   };
 
@@ -27,12 +34,14 @@ export default function Projects() {
         </Stack>
         {showProjects && 
           <AnimatedVisibleContent>
-            <>
+            <Stack>
               <Divider />
               {projectsList.map((project) => 
-                <ProjectDetails key={project.name} project={project} />
+                <StackItem key={project.name} styles={projectItemStyles}>
+                  <ProjectDetails  project={project} />
+                </StackItem>
               )}
-            </>
+            </Stack>
           </AnimatedVisibleContent>
         }
         <Label size="small">Still many projects are there from Avantari and Innovare, I will add in the coming days...</Label>
