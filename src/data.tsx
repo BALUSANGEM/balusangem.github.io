@@ -123,7 +123,79 @@ export const projectsList: Project[] = [
     companyLink: "https://tutch.com.au/",
     from: "",
     to: ""
-  }
+  },
+  {
+    name: "Dhyana",
+    client: "Avantari",
+    company: "Avantari",
+    description: "Dhyana is a companion app with Dhyana Ring to measure Heart rate variability and give insights into Meditation",
+    contribution: "Leading development of the app from requirements gathering to deployment. One of the achievements from this project is creating and SDK to read heart rate from a Hardware device using BLE",
+    techstack: ["Android", "Kotlin"],
+    applink: "https://play.google.com/store/apps/details?id=org.avantari.dhyana&hl=en&gl=US&pli=1",
+    companyLink: "https://www.avantari.org/",
+    from: "",
+    to: ""
+  },
+  {
+    name: "AppStar",
+    client: "Avantari",
+    company: "Avantari",
+    description: "AppStar is an AR platformt to promote movies. Movie characters come into real life into your homes and talk to you :)",
+    contribution: "Leading development of the app from requirements gathering to deployment. We used ARCore and implemented functionality for a movie marketing",
+    techstack: ["Android", "Kotlin", "ARCore"],
+    applink: "",
+    companyLink: "https://www.avantari.org/",
+    from: "",
+    to: ""
+  },
+  {
+    name: "Dhyan Brahma",
+    client: "Avantari",
+    company: "Avantari",
+    description: "Dhyana with Swamiji, is the world's first Quantified Meditation App that monitors the quality of your meditation",
+    contribution: "Implemented meditation UI and stats UI with complex designs ",
+    techstack: ["Android", "Kotlin"],
+    applink: "https://play.google.com/store/apps/details?id=com.avantari.meditation",
+    companyLink: "https://www.avantari.org/",
+    from: "",
+    to: ""
+  },
+  {
+    name: "Divine Darshan",
+    client: "Avantari",
+    company: "Avantari",
+    description: "Personalized Guided meditation app with AR",
+    contribution: "Integrated Audio player functionalies to play guruji guided meditation ",
+    techstack: ["Android", "Kotlin"],
+    applink: "https://play.google.com/store/apps/details?id=com.avantari.meditation",
+    companyLink: "https://www.avantari.org/",
+    from: "",
+    to: ""
+  },
+  {
+    name: "CM Talks & Hebatkan Negaraku",
+    client: "Avantari",
+    company: "Avantari",
+    description: "Both apps are AR based apps used for political compaigns in Karnataka and Singapore",
+    contribution: "Leading and developing the products from requirements to deployment of apps",
+    techstack: ["Android", "Kotlin"],
+    applink: "https://play.google.com/store/apps/details?id=com.avantari.meditation",
+    companyLink: "https://www.avantari.org/",
+    from: "",
+    to: ""
+  },
+  {
+    name: "Odisha AR Project",
+    client: "Avantari",
+    company: "Avantari",
+    description: "This is a personal political compaigning app for Orissa political party, Users can take picture with AR avatar of candidate and get physical copy of the picture on the site",
+    contribution: "It had AR functionality, wifi direct, Printing an image to Printer. Handling everything from starting to deploying the app to 5000 phones of political party volunteers",
+    techstack: ["Android", "Kotlin", "ARCore"],
+    applink: "https://play.google.com/store/apps/details?id=com.avantari.meditation",
+    companyLink: "https://www.avantari.org/",
+    from: "",
+    to: ""
+  },
 ];
 
 export const workDetails: WorkAtCompanyDetails[] = [
