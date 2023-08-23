@@ -17,7 +17,7 @@ export default function Projects() {
 
   return (
     <>
-      <AnimatedAccordian header="Projects" extendedHeader={"- " + projectsList.length} footer="Still many projects are there from Avantari and Innovare, I will add in the coming days...">
+      <AnimatedAccordian header="Projects" extendedHeader={"- " + projectsList.length}>
         <Stack>
           <Divider />
           {projectsList.map((project) => <StackItem key={project.name} styles={projectItemStyles}>

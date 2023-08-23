@@ -39,6 +39,26 @@ export type WorkAtCompanyDetails = {
     to: string | number;
 }
 
+// eslint-disable-next-line
+export type Article = {
+    // eslint-disable-next-line
+    header: string,
+    // eslint-disable-next-line
+    summary: string,
+    // eslint-disable-next-line
+    link: string
+}
+
+// eslint-disable-next-line
+export type OpenSource = {
+    // eslint-disable-next-line
+    name: string,
+    // eslint-disable-next-line
+    link: string,
+    // eslint-disable-next-line
+    stars: number
+}
+
 export const projectsList: Project[] = [
   {
     name: "JTMS Driver App",
@@ -247,5 +267,28 @@ export const workDetails: WorkAtCompanyDetails[] = [
     role: "Software Engineer",
     link: "https://www.plugxr.com/",
     learnings: "I worked with a team to create complex UIs. I worked closely with the unity team to develop AR applications."
+  }
+]
+
+export const articlesList: Article[]= [
+  {
+    header: "Exploring ImageDecoder",
+    link: "https://medium.com/nosort/a-class-for-converting-encoded-images-like-png-jpeg-webp-gif-or-heif-into-drawable-or-6a7219319abc",
+    summary: ""
+  },
+  {
+    header: "App Startup States and issues",
+    link: "https://medium.com/nosort/users-expect-apps-to-be-responsive-and-fast-to-launch-c98238e743c1",
+    summary: ""
+  },
+  {
+    header: "Playing Video in ARCore using OpengGL",
+    link: "https://medium.com/nosort/playing-video-in-arcore-using-openggl-a81ff62f7a6d",
+    summary: ""
+  },
+  {
+    header: "Adding views on top of UnityPlayer in UnityPlayerActivity",
+    link: "https://medium.com/nosort/adding-views-on-top-of-unityplayer-in-unityplayeractivity-e76240799c82",
+    summary: ""
   }
 ]

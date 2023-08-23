@@ -14,6 +14,7 @@ import Projects from "./ui/Projects";
 import { Header } from "./ui/Header";
 import { Footer } from "./ui/Footer";
 import { SocialLinks } from "./ui/SocialLinks";
+import { OpenSourceandContributions } from "./ui/OpenSourceandContributions";
 
 const stackStyles: IStackStyles = {
   root: {
@@ -34,7 +35,7 @@ export const horizontalGapStackTokens: IStackTokens = {
 
 const leftPaneStackStyles: IStackStyles = {
   root: {
-    padding: 16
+    padding: 16,
   },
 };
 
@@ -63,6 +64,9 @@ export default function App() {
           </StackItem>
           <Stack styles={leftPaneStackStyles}>
             <StackItem><WorkExperience /></StackItem>
+          </Stack>
+          <Stack styles={rightPaneStackStyles}>
+            <OpenSourceandContributions />
           </Stack>
           <Stack styles={rightPaneStackStyles}>
             <Projects />

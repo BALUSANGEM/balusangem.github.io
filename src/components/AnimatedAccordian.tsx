@@ -4,7 +4,7 @@ import React, { useCallback, useState } from "react";
 import { IStackStyles, Stack, StackItem } from "@fluentui/react";
 import { AnimatedVisibleContent } from "./AnimatedVisibleContent";
 
-export function AnimatedAccordian({ header, extendedHeader, footer, children }: { header: string; extendedHeader: string; footer: string | undefined; children: any; }) {
+export function AnimatedAccordian({ header, extendedHeader, footer, children }: { header: string; extendedHeader: string; footer?: string | undefined; children: any; }) {
 
   //TODO Move this up chain in future
   const [showContent, setShowContent] = useState(false);

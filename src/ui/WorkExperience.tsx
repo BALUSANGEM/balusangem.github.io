@@ -15,7 +15,7 @@ export default function WorkExperience() {
   };
 
   return (
-    <AnimatedAccordian header="Work Experience" extendedHeader={"- " + workDetails.length + " Companies" } footer={undefined}>
+    <AnimatedAccordian header="Work Experience" extendedHeader={"- " + workDetails.length + " Companies" }>
       <Stack>
         <Divider />
         {workDetails.map((workDetails) => 
