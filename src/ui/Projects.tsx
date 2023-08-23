@@ -1,21 +1,13 @@
-import { Card, Divider, Label, Title3 } from "@fluentui/react-components";
-import React, { useState } from "react";
+import { Divider } from "@fluentui/react-components";
+import React from "react";
 import { projectsList } from "../data";
 import { ProjectDetails } from "./ProjectDetails";
 // eslint-disable-next-line  no-unused-vars
-import { IStackItemStyles, IStackStyles, Stack, StackItem } from "@fluentui/react";
+import { IStackItemStyles, Stack, StackItem } from "@fluentui/react";
 // eslint-disable-next-line  no-unused-vars
-import { AnimatedVisibleContent } from "../components/AnimatedVisibleContent";
+import { AnimatedAccordian } from "../components/AnimatedAccordian";
 
 export default function Projects() {
-  const [showProjects, setShowProjects] = useState(false)
-
-  const showAllItemStyles: IStackStyles = {
-    root: {
-      paddingLeft: 16,
-      paddingTop: 6,
-    },
-  };
 
   const projectItemStyles: IStackItemStyles = {
     root: {
@@ -25,27 +17,15 @@ export default function Projects() {
 
   return (
     <>
-      <Card appearance="outline">
-        <Stack horizontal verticalAlign="center">
-          <Title3>Projects {showProjects? null : "- " +projectsList.length+ " Projects"}</Title3>
-          <StackItem styles={showAllItemStyles}>
-            <Label role="presentation" onClick={() => setShowProjects(!showProjects)}>{showProjects ? "Collapse all" : "Show all"}</Label>
+      <AnimatedAccordian header="Projects" extendedHeader={"- " + projectsList.length} footer="Still many projects are there from Avantari and Innovare, I will add in the coming days...">
+        <Stack>
+          <Divider />
+          {projectsList.map((project) => <StackItem key={project.name} styles={projectItemStyles}>
+            <ProjectDetails project={project} />
           </StackItem>
+          )}
         </Stack>
-        {showProjects && 
-          <AnimatedVisibleContent>
-            <Stack>
-              <Divider />
-              {projectsList.map((project) => 
-                <StackItem key={project.name} styles={projectItemStyles}>
-                  <ProjectDetails  project={project} />
-                </StackItem>
-              )}
-            </Stack>
-          </AnimatedVisibleContent>
-        }
-        <Label size="small">Still many projects are there from Avantari and Innovare, I will add in the coming days...</Label>
-      </Card>
+      </AnimatedAccordian>
     </>
   )
 }
