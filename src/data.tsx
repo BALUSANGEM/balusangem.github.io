@@ -167,7 +167,7 @@ export const projectsList: Project[] = [
     description: "Personalized Guided meditation app with AR",
     contribution: "Integrated Audio player functionalies to play guruji guided meditation ",
     techstack: ["Android", "Kotlin"],
-    applink: "https://play.google.com/store/apps/details?id=com.avantari.meditation",
+    applink: "",
     companyLink: "https://www.avantari.org/",
     from: "",
     to: ""
@@ -179,7 +179,7 @@ export const projectsList: Project[] = [
     description: "Both apps are AR based apps used for political compaigns in Karnataka and Singapore",
     contribution: "Leading and developing the products from requirements to deployment of apps",
     techstack: ["Android", "Kotlin"],
-    applink: "https://play.google.com/store/apps/details?id=com.avantari.meditation",
+    applink: "",
     companyLink: "https://www.avantari.org/",
     from: "",
     to: ""
@@ -191,11 +191,36 @@ export const projectsList: Project[] = [
     description: "This is a personal political compaigning app for Orissa political party, Users can take picture with AR avatar of candidate and get physical copy of the picture on the site",
     contribution: "It had AR functionality, wifi direct, Printing an image to Printer. Handling everything from starting to deploying the app to 5000 phones of political party volunteers",
     techstack: ["Android", "Kotlin", "ARCore"],
-    applink: "https://play.google.com/store/apps/details?id=com.avantari.meditation",
+    applink: "",
     companyLink: "https://www.avantari.org/",
     from: "",
     to: ""
   },
+  {
+    name: "Scifikids ",
+    client: "Innovare IT Solutions",
+    company: "Innovare IT Solutions",
+    description: "Kids can download the app and see animated characters in real life",
+    contribution: "It had AR functionality, my responsibility was to integrate android with unity functionality and implementing the whole functionality of the app except unity part",
+    techstack: ["Android", "Java", "ARCore"],
+    applink: "",
+    companyLink: "https://www.plugxr.com/",
+    from: "",
+    to: ""
+  },
+  {
+    name: "Islamic Information Center ",
+    client: "Innovare IT Solutions",
+    company: "Innovare IT Solutions",
+    description: "This app contains lots of books Islamic teachings",
+    contribution: "I am a single developer on this app. This is my first app. It had complex UIs and lots of data and each book was in almost 7 languages. I implemented everything on my own",
+    techstack: ["Android", "Java"],
+    applink: "",
+    companyLink: "https://www.plugxr.com/",
+    from: "",
+    to: ""
+  },
+  
 ];
 
 export const workDetails: WorkAtCompanyDetails[] = [
