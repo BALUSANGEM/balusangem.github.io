@@ -54,9 +54,13 @@ export type OpenSource = {
     // eslint-disable-next-line
     name: string,
     // eslint-disable-next-line
+    description: string,
+    // eslint-disable-next-line
     link: string,
     // eslint-disable-next-line
-    stars: number
+    stars: number,
+    // eslint-disable-next-line
+    forks: number
 }
 
 export const projectsList: Project[] = [
@@ -290,5 +294,29 @@ export const articlesList: Article[]= [
     header: "Adding views on top of UnityPlayer in UnityPlayerActivity",
     link: "https://medium.com/nosort/adding-views-on-top-of-unityplayer-in-unityplayeractivity-e76240799c82",
     summary: ""
+  }
+]
+
+export const openSourcesList: OpenSource[] = [
+  {
+    name: "UberSlideUp",
+    description: "Implementation of Uber home screen animation using MotionLayout",
+    link: "https://github.com/BALUSANGEM/UberSlideUp",
+    stars: 75,
+    forks: 5
+  },
+  {
+    name: "BlurDrawerLayout",
+    description: "DrawerLayout with blur functionality like iOS",
+    link: "https://github.com/BALUSANGEM/BlurDrawerLayout",
+    stars: 34,
+    forks: 7
+  },
+  {
+    name: "Dev101-Starting",
+    description: "Codelab to understand basics of MotionLayout",
+    link: "https://github.com/BALUSANGEM/Dev101-Starting",
+    stars: 1,
+    forks: 3
   }
 ]

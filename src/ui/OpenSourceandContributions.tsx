@@ -1,21 +1,20 @@
 import React from "react";
-import { Card, Label } from "@fluentui/react-components";
-import { Stack } from "@fluentui/react/lib/Stack";
+import { Divider } from "@fluentui/react-components";
 import { AnimatedAccordian } from "../components/AnimatedAccordian";
-import HighlightLink from "../components/HighlightLink";
-import { articlesList } from "../data";
+import { GithubProjects } from "./GithubProjects";
+import { Articles } from "./Articles";
 
 export function OpenSourceandContributions() {
   return <AnimatedAccordian header="Open source and Contributions" extendedHeader="">
-    <Card appearance="outline">
-      <Label size="large" weight="semibold">Articles</Label>
-      <Stack verticalAlign="center">
-        {
-          articlesList.map((article) => 
-            <HighlightLink key={article.header} text={article.header} link={article.link} />
-          )
-        }  
-      </Stack>
-    </Card>
+    <>
+      <Divider />
+      <div style={{marginTop: 16}}>
+        <Articles />
+      </div>
+      <div style={{marginTop: 16}}>
+        <GithubProjects />
+      </div>
+    </>
   </AnimatedAccordian>
 }
+
