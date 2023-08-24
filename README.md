@@ -1,6 +1,6 @@
 # Portfolio - Sangem Balakrishna
 
-This is a website to showcase my experience
+This is a website to showcase my experience, [Check it out](https://balusangem.github.io/)
 
 It has following content:
 * Projects, I worked on
