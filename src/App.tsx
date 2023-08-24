@@ -46,8 +46,6 @@ const rightPaneStackStyles: IStackStyles = {
 };
 
 export default function App() {
-
-
   return (
     <FluentProvider theme={webLightTheme}>
       <Divider></Divider>
@@ -72,7 +70,7 @@ export default function App() {
             <Projects />
           </Stack>
         </Stack>
-        <Label style={{paddingLeft: 20}}> Please send message on any social media to ask any questions or improvement... Cheers</Label>
+        <Label style={{paddingLeft: 20}}> Please send message on any social media to ask any question or suggest an improvement... Cheers</Label>
         <Footer />
       </Stack>        
     </FluentProvider>
