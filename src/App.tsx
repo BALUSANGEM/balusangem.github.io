@@ -72,7 +72,7 @@ export default function App() {
             <Projects />
           </Stack>
         </Stack>
-        <Label style={{paddingLeft: 20}}> Blogs and Open source contribution will be added in the coming days...</Label>
+        <Label style={{paddingLeft: 20}}> Please send message on any social media to ask any questions or improvement... Cheers</Label>
         <Footer />
       </Stack>        
     </FluentProvider>
